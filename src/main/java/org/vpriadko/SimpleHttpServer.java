@@ -22,7 +22,7 @@ public class SimpleHttpServer {
         @Override
         public void handle(HttpExchange t) throws IOException {
             String response = "<html>" + new java.util.Date() + "</br></br>";
-            File folder = new File("C:\\");
+            File folder = new File("/bin");
             response = response + "Files in " + folder + "</br></br>";
             File[] files = folder.listFiles();
             for (File file : files) {
